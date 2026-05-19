@@ -3,32 +3,28 @@
 # MAGIC # Crop Varieties Canonical — Load & Explore
 # MAGIC
 # MAGIC One-cell load + a handful of canonical exploration queries.
-# MAGIC Run `create_table.sql` first to create `agri.variety_catalogues.varieties`.
+# MAGIC Run `create_table.sql` first to create `ggo_agdev.agdev.ref_varieties`.
 # MAGIC
-# MAGIC The parquet file is published at the URL below. Override `PARQUET_URL` if
-# MAGIC your workspace mirrors it to a UC Volume.
+# MAGIC The parquet file is hosted in the `ggo_agdev.agdev.staging` UC Volume.
+# MAGIC Refresh it via `quarterly_refresh.py` or by re-uploading from the GitHub package.
 
 # COMMAND ----------
 
-PARQUET_URL = "https://raw.githubusercontent.com/gatesfoundation/crop_varieties_canonical/main/data/varieties.parquet"
-TABLE       = "agri.variety_catalogues.varieties"
+PARQUET_PATH = "/Volumes/ggo_agdev/agdev/staging/crop_varieties_canonical/varieties.parquet"
+TABLE        = "ggo_agdev.agdev.ref_varieties"
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## Load — single cell, no local dependencies
 # MAGIC
-# MAGIC Reads the parquet artifact directly from GitHub raw, overwrites the Delta
+# MAGIC Reads the parquet artifact directly from the Volume, overwrites the Delta
 # MAGIC table. Idempotent — safe to re-run.
 
 # COMMAND ----------
 
-import urllib.request, pathlib, tempfile
-
-tmp = pathlib.Path(tempfile.mkdtemp()) / "varieties.parquet"
-urllib.request.urlretrieve(PARQUET_URL, tmp)
-df = spark.read.parquet(str(tmp))
-print(f"Loaded {df.count():,} rows / {len(df.columns)} cols from artifact")
+df = spark.read.parquet(PARQUET_PATH)
+print(f"Loaded {df.count():,} rows / {len(df.columns)} cols from {PARQUET_PATH}")
 df.write.mode("overwrite").option("overwriteSchema", "true").saveAsTable(TABLE)
 print(f"Wrote {TABLE}")
 
@@ -40,7 +36,7 @@ print(f"Wrote {TABLE}")
 
 # MAGIC %sql
 # MAGIC SELECT source, COUNT(*) AS n_rows
-# MAGIC FROM agri.variety_catalogues.varieties
+# MAGIC FROM ggo_agdev.agdev.ref_varieties
 # MAGIC GROUP BY source
 # MAGIC ORDER BY n_rows DESC
 
@@ -49,7 +45,7 @@ print(f"Wrote {TABLE}")
 # MAGIC %sql
 # MAGIC -- Country coverage (top 25)
 # MAGIC SELECT country_iso3, country_name, COUNT(*) AS n
-# MAGIC FROM agri.variety_catalogues.varieties
+# MAGIC FROM ggo_agdev.agdev.ref_varieties
 # MAGIC WHERE country_iso3 IS NOT NULL
 # MAGIC GROUP BY country_iso3, country_name
 # MAGIC ORDER BY n DESC LIMIT 25
@@ -59,7 +55,7 @@ print(f"Wrote {TABLE}")
 # MAGIC %sql
 # MAGIC -- Crop coverage (top 25)
 # MAGIC SELECT crop, COUNT(*) AS n, COUNT(DISTINCT country_iso3) AS countries
-# MAGIC FROM agri.variety_catalogues.varieties
+# MAGIC FROM ggo_agdev.agdev.ref_varieties
 # MAGIC GROUP BY crop
 # MAGIC ORDER BY n DESC LIMIT 25
 
@@ -68,7 +64,7 @@ print(f"Wrote {TABLE}")
 # MAGIC %sql
 # MAGIC -- Recent releases (2024+) in priority geographies
 # MAGIC SELECT country_iso3, crop, variety_name, year_release, breeder, source
-# MAGIC FROM agri.variety_catalogues.varieties
+# MAGIC FROM ggo_agdev.agdev.ref_varieties
 # MAGIC WHERE year_release >= 2024
 # MAGIC   AND release_status IN ('released','registered')
 # MAGIC   AND country_iso3 IN ('KEN','TZA','ETH','GHA','NGA','SEN','BFA','IND','BGD','PAK','LKA','ZAF','MAR','EGY')
@@ -85,7 +81,7 @@ print(f"Wrote {TABLE}")
 # MAGIC   COLLECT_SET(source) AS sources,
 # MAGIC   COLLECT_SET(country_iso3) AS countries,
 # MAGIC   MIN(year_release) AS first_year
-# MAGIC FROM agri.variety_catalogues.varieties
+# MAGIC FROM ggo_agdev.agdev.ref_varieties
 # MAGIC WHERE variety_name IS NOT NULL AND variety_name <> ''
 # MAGIC GROUP BY UPPER(variety_name)
 # MAGIC HAVING n_sources > 1
@@ -97,7 +93,7 @@ print(f"Wrote {TABLE}")
 # MAGIC %sql
 # MAGIC -- Review queue — rows that need human attention
 # MAGIC SELECT review_flags, COUNT(*) AS n
-# MAGIC FROM agri.variety_catalogues.varieties
+# MAGIC FROM ggo_agdev.agdev.ref_varieties
 # MAGIC WHERE review_flags IS NOT NULL AND review_flags <> ''
 # MAGIC GROUP BY review_flags
 # MAGIC ORDER BY n DESC

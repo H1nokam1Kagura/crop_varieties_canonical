@@ -3,7 +3,7 @@
 # MAGIC # Crop Varieties Canonical — Quarterly Refresh
 # MAGIC
 # MAGIC Re-runs the live-API sources (AGRA, PPV&FRA, WIEWS, CIMMYT) and merges new
-# MAGIC rows into `agri.variety_catalogues.varieties`. PDF sources (NACGRAB, KEPHIS,
+# MAGIC rows into `ggo_agdev.agdev.ref_varieties`. PDF sources (NACGRAB, KEPHIS,
 # MAGIC Ghana, ECOWAS) refresh only when the GitHub Action detects a new edition.
 # MAGIC
 # MAGIC Schedule: quarterly via Databricks Workflows or via the GitHub Action that
@@ -22,7 +22,7 @@ import csv, io, json, ssl, urllib.request, urllib.parse, hashlib, re
 from datetime import datetime, timezone
 from collections import Counter
 
-TABLE = "agri.variety_catalogues.varieties"
+TABLE = "ggo_agdev.agdev.ref_varieties"
 NOAUTH_CTX = ssl.create_default_context(); NOAUTH_CTX.check_hostname=False; NOAUTH_CTX.verify_mode=ssl.CERT_NONE
 HDRS = {"User-Agent":"Mozilla/5.0 Chrome/131","Accept-Language":"en-US,en;q=0.9"}
 RETRIEVED_AT = datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -153,4 +153,4 @@ print(f"Merged into {TABLE}")
 
 # COMMAND ----------
 
-# MAGIC %sql SELECT source, COUNT(*) FROM agri.variety_catalogues.varieties GROUP BY source ORDER BY 2 DESC
+# MAGIC %sql SELECT source, COUNT(*) FROM ggo_agdev.agdev.ref_varieties GROUP BY source ORDER BY 2 DESC

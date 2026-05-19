@@ -42,7 +42,9 @@ crop_varieties_canonical/
 %run ./databricks/load_and_explore.py
 ```
 
-That's it. The notebook reads `data/varieties.parquet` directly from the GitHub raw URL and writes to `agri.variety_catalogues.varieties`. No local Python install, no PDF parsers, no scrapers.
+That's it. The notebook reads `varieties.parquet` from the `ggo_agdev.agdev.staging` UC Volume and writes to `ggo_agdev.agdev.ref_varieties`. No local Python install, no PDF parsers, no scrapers.
+
+> **Deployment pattern (BMGF Databricks):** parquet is hosted in the `ggo_agdev.agdev.staging` UC Volume at `crop_varieties_canonical/varieties.parquet`. The `quarterly_refresh.py` notebook re-pulls live sources and merges into `ggo_agdev.agdev.ref_varieties` in place. The GitHub Action keeps the GitHub copy and the Volume copy in sync for downstream consumers.
 
 ## Quick start — anywhere else
 

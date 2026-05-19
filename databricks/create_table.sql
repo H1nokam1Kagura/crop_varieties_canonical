@@ -1,15 +1,15 @@
 -- crop_varieties_canonical — Unity Catalog DDL
--- Run once per workspace to create the catalog/schema/table.
--- Then use load_and_explore.py to populate from the published parquet artifact.
+-- Run once per workspace to create the schema/table.
+-- Then use load_and_explore.py to populate from the Volume-hosted parquet.
+--
+-- Deployment target: ggo_agdev.agdev (catalog.schema)
+-- Table name: ref_varieties (follows the ref_* convention used elsewhere in the schema)
+-- Parquet host: /Volumes/ggo_agdev/agdev/staging/crop_varieties_canonical/varieties.parquet
 
--- Adjust catalog and schema names for your workspace
-CREATE CATALOG IF NOT EXISTS agri;
-USE CATALOG agri;
-CREATE SCHEMA IF NOT EXISTS variety_catalogues
-    COMMENT 'Crop variety release records unified from public national, regional, and multilateral catalogues';
-USE SCHEMA variety_catalogues;
+USE CATALOG ggo_agdev;
+USE SCHEMA agdev;
 
-CREATE TABLE IF NOT EXISTS varieties (
+CREATE TABLE IF NOT EXISTS ref_varieties (
     source              STRING  COMMENT 'agra | ppvfra | nacgrab | ecowas | ghana_2019 | kephis_2025 | wiews_indicator40 | cimmyt_maize',
     source_record_id    STRING  COMMENT 'PK within source — opaque',
     country_iso3        STRING  COMMENT 'ISO 3166-1 alpha-3; null for regional CIMMYT releases',

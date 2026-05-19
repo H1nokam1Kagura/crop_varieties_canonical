@@ -1,80 +1,68 @@
-**Subject:** Crop variety catalogue — unified dataset ready to use (45k records, 70 countries, Databricks-ready)
+**Subject:** Crop variety catalogue — one table, 45k records, ready to query
 
 ---
 
 Hi team,
 
-I've pulled together a single canonical dataset of public crop variety registrations and releases. **45,670 rows across 70 countries and 8 sources, 1935–2026**, deduplicated and normalised to one schema. Cloud-first — no local Python install required.
+I pulled together a single table of crop variety registrations and releases from eight public sources — government catalogues, regional bodies, FAO, CIMMYT. **45,670 rows across 70 countries, 1935 to 2026, all in one place.**
 
-**TL;DR — what you get:**
+## Where it lives
 
-- `data/varieties.parquet` — 1.5 MB, the canonical analytics artifact
-- Databricks Unity Catalog DDL + load notebook ready to drop in
-- Quarterly auto-refresh via GitHub Action (live-API sources only; PDF sources tracked by fingerprint)
-- Full provenance per row (`source`, `source_url`, `retrieved_at`)
-- QC layer: country inference flags, review-queue codes
+- **Databricks table**: `agri.variety_catalogues.varieties`
+- Same data also sits as a parquet file in the GitHub repo if you need it outside Databricks
 
-**How to access:**
+## How to use it
 
-1. **Databricks (recommended)** — run the two notebooks in `databricks/`:
-   - `create_table.sql` once per workspace
-   - `load_and_explore.py` to load the parquet from the published URL into `agri.variety_catalogues.varieties` (catalog/schema names are customisable)
-2. **Direct read from anywhere** —
-   ```python
-   import pandas as pd
-   df = pd.read_parquet("https://raw.githubusercontent.com/gatesfoundation/crop_varieties_canonical/main/data/varieties.parquet")
-   ```
-3. **CSV fallback** — same data in `data/varieties.csv` (12 MB) if you can't read parquet
+Easiest path: just ask Claude Code. The table is loaded and column-commented in Databricks, so Claude can write the SQL for you. Some things to try:
 
-**Sources merged:**
+- *"Which maize varieties were registered in Kenya since 2023?"*
+- *"How many cassava varieties does Nigeria have in this catalogue?"*
+- *"List Ethiopia rice releases with year and breeder."*
+- *"Compare wheat variety counts across India, Pakistan, and Bangladesh."*
+- *"Which CIMMYT maize lines are flagged as drought tolerant for Eastern Africa?"*
+- *"Show me variety releases in Ghana from the last five years where the AGRA catalogue and the national Ghana 2019 catalogue disagree."*
 
-| Source | Country/scope | Records |
+Claude will write the query, run it against Databricks, and hand you the result.
+
+## What's in it
+
+| Region | Coverage | Approx records |
 |---|---|---:|
-| PPV&FRA India | India | 21,657 |
-| FAO WIEWS Indicator 40 | 70+ countries globally | 16,781 |
-| AGRA / CESSA | 10 African countries | 4,605 |
-| KEPHIS Kenya 2025 | Kenya | 1,170 |
-| NACGRAB Nigeria (Apr 2025) | Nigeria | 811 |
-| CIMMYT Maize | 4 multi-country regions | 319 |
-| Ghana 2019 catalogue | Ghana | 199 |
-| ECOWAS regional 2022 | 9 W. African countries | 128 |
+| East Africa | Kenya, Tanzania, Ethiopia, Uganda, Rwanda, Malawi, Mozambique, Zambia | 5,400 |
+| West Africa | Nigeria, Ghana, Senegal, Burkina Faso, Mali, Gambia, Niger, Togo, Chad | 2,400 |
+| North Africa | Morocco, Egypt, Tunisia, Algeria, Sudan | 900 |
+| Southern Africa | South Africa + neighbours | 700 |
+| South Asia | India, Bangladesh, Pakistan, Sri Lanka, Nepal, Bhutan | 22,200 |
+| Latin America, Europe, others | (via the FAO global dataset) | 13,500 |
 
-Africa coverage: KEN 2,630 / NGA 1,402 / ETH 658 / ZAF 619 / TZA 449 / GHA 442 / MAR 447 / EGY 402 / and 50+ more. South Asia: IND 21,778 / BGD 340 / PAK 68 / LKA 31.
+Major crops: maize, rice, wheat, sorghum, pearl millet, cowpea, common bean, cassava, sweet potato, groundnut, sunflower, tomato, cotton — plus 240+ others.
 
-**Useful queries (Databricks SQL — included in `load_and_explore.py`):**
+## Useful columns when filtering
 
-```sql
--- Fresh releases (2024+) in priority geographies
-SELECT country_iso3, crop, variety_name, year_release, breeder
-FROM agri.variety_catalogues.varieties
-WHERE year_release >= 2024
-  AND release_status IN ('released','registered')
-  AND country_iso3 IN ('KEN','TZA','ETH','GHA','NGA','SEN','BFA','IND','BGD','PAK','LKA')
-ORDER BY year_release DESC, country_iso3;
-```
+- `country_iso3` — three-letter codes (KEN, NGA, ETH, IND, BGD, PAK, ...)
+- `crop` — UPPERCASE English (MAIZE, RICE, SORGHUM, ...)
+- `year_release` — when the variety was officially released
+- `breeder` — who developed it
+- `release_status` — `released`, `registered`, `candidate`, `closed`, `withdrawn`
+- `source` — which catalogue this row came from
 
-**Method, in short:**
+## Things worth knowing
 
-- Each source has a custom adapter (Laravel paginator for AGRA, public Algolia key for CIMMYT, FAO's signed-CSV API for WIEWS, etc.) — I reverse-engineered each one by capturing the actual XHR shape rather than relying on stale documentation. The methodology is captured in the GitHub README so it's reproducible.
-- Country normalisation uses ISO 3166-1 alpha-3.
-- Crops are normalised to UPPERCASE English (FR→EN, multilingual variants collapsed: `MAÍZ`/`Maïs`/`Maize` → `MAIZE`; `BREAD WHEAT`/`DURUM WHEAT` → `WHEAT`).
-- Country inference (705 rows) was applied where source labels were placeholder or missing (e.g. AGRA "TEST" → KEN based on Kenyan-org breeders). Every inferred row carries `country_inferred=True` + `inference_basis` so you can filter or audit.
-- 153 rows currently carry `review_flags`. Most are informational. See the review-queue query in the notebook for the full list.
+- **Provenance is preserved.** Every row carries the source URL it came from and a timestamp. No black-box magic.
+- **Some country tags are inferred.** About 700 rows had missing or placeholder country fields; I inferred them from the breeder organisation (e.g. "KALRO" → Kenya). Those rows are flagged `country_inferred = true` if you want to filter them out.
+- **153 rows have quality flags.** Mostly minor — Indian registry codes that look numeric, a handful of multi-country brands without a single country tag. The `review_flags` column tells you which.
+- **PDF-based sources are point-in-time.** Kenya KEPHIS reflects the Feb 2025 edition, Nigeria NACGRAB the April 2025 edition, etc. Live API sources (AGRA, India PPV&FRA, FAO WIEWS, CIMMYT) refresh quarterly.
 
-**Known limitations** (also in the README):
+## Refresh
 
-- PDF-sourced rows reflect the catalogue edition we last scraped — KEPHIS 2025, NACGRAB Apr 2025, Ghana 2019. The GitHub Action auto-detects new editions via Last-Modified headers but re-parsing is manual.
-- WIEWS coverage is reporter-driven; Kenya, Ghana, Burkina Faso submitted zero records for the most recent global reporting cycle.
-- Cross-source dedup is variety-name based — same physical variety can appear in multiple sources. The cross-source overlap query in the notebook surfaces likely duplicates for triage.
+Auto-refresh runs quarterly via GitHub Action (1st of Mar / Jun / Sep / Dec). The live API sources stay current. PDF-based sources refresh when their publisher posts a new edition.
 
-**Refresh:**
+## Repo
 
-- **Quarterly** — GitHub Action rebuilds the parquet on the 1st of Mar/Jun/Sep/Dec and (optionally) triggers a Databricks job
-- **Ad-hoc** — anyone with the repo can run `python scripts/refresh.py --out data/varieties.parquet` and commit the new parquet
+`https://github.com/gatesfoundation/crop_varieties_canonical`
 
-**Repository:** `https://github.com/gatesfoundation/crop_varieties_canonical`
-**License:** CC-BY-4.0 on the unification work; underlying sources keep their original licenses
+The README in the repo has the long version — schema, methodology, how to add a new country, gotchas per source.
 
-Happy to walk anyone through it — drop me a line.
+Happy to walk anyone through it.
 
 — Neil
