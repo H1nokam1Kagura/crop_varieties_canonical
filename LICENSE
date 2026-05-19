@@ -1,0 +1,41 @@
+Attribution 4.0 International (CC BY 4.0)
+
+Copyright 2026 — crop_varieties_canonical contributors
+
+The unification, normalisation, schema, country inference, and review-flag layer
+in this repository are licensed under the Creative Commons Attribution 4.0
+International License (CC BY 4.0).
+
+You are free to:
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+for any purpose, even commercially.
+
+Under the following terms:
+  - Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor endorses
+    you or your use.
+  - No additional restrictions — You may not apply legal terms or technological
+    measures that legally restrict others from doing anything the license permits.
+
+Full license text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+---
+
+UNDERLYING SOURCE DATA
+
+The variety records aggregated in `data/varieties.parquet` remain under the
+licenses of their original publishers:
+
+  - AGRA / CESSA varietycatalogues.com — open access, attribution requested
+  - PPV&FRA India (plantauthority.gov.in/node/3044) — Government of India open data
+  - NACGRAB Nigeria (nacgrab.gov.ng) — Federal Ministry of Science & Technology
+  - ECOWAS-UEMOA-CILSS Regional Catalogue — regional public document
+  - Ghana 2019 National Crop Variety Catalogue (CSIR-CRI / NASTAG) — public
+  - KEPHIS Kenya National Crop Variety List (kephis.go.ke) — public
+  - FAO WIEWS Indicator 40 (fao.org/wiews) — FAO open data
+  - CIMMYT Maize Catalog (maizecatalog.cimmyt.org) — public catalog
+
+When redistributing this dataset, attribute both this aggregation work AND
+the relevant underlying sources for the rows you use.
