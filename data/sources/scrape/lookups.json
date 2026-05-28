@@ -1,0 +1,744 @@
+{
+  "crops": [
+    {
+      "id": 1,
+      "name": "BREAD WHEAT",
+      "code": "TRZAX",
+      "name_fr": "BLÉ TENDRE",
+      "name_pt": "TRIGO PARA PÃO",
+      "botanicalname": "TRITICUM AESTIVUM L.",
+      "slug": "bread-wheat",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T06:12:17.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "BUCK WHEAT",
+      "code": "FAGES",
+      "name_fr": "SARRASIN",
+      "name_pt": "TRIGO-SARRACENO",
+      "botanicalname": "FAGOPYRUM ESCULENTUM MOENCH",
+      "slug": "buck-wheat",
+      "status": 1,
+      "created_at": "2025-06-26T06:23:00.000000Z",
+      "updated_at": "2026-03-05T05:14:05.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "CASSAVA",
+      "code": "MANES",
+      "name_fr": "MANIOC",
+      "name_pt": "MANDIOCA",
+      "botanicalname": "MANIHOT ESCULENTA CRANTZ.",
+      "slug": "cassava",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T05:14:24.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "COMMON BEAN",
+      "code": "PHSVX",
+      "name_fr": "HARICOT",
+      "name_pt": "FEIJÃO VULGAR",
+      "botanicalname": "PHASEOLUS VULGARIS L.",
+      "slug": "common-bean",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T06:08:04.000000Z"
+    },
+    {
+      "id": 5,
+      "name": "COWPEA",
+      "code": "VIGSI",
+      "name_fr": "NIÉBÉ",
+      "name_pt": "FEIJÃO NHEMBA",
+      "botanicalname": "VIGNA UNGUICULATA",
+      "slug": "cowpea",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T06:11:49.000000Z"
+    },
+    {
+      "id": 6,
+      "name": "DURUM WHEAT",
+      "code": "TRZDU",
+      "name_fr": "BLÉ DUR",
+      "name_pt": "TRIGO DURUM",
+      "botanicalname": "TRITICUM DURUM",
+      "slug": "durum-wheat",
+      "status": 1,
+      "created_at": "2025-06-26T06:23:25.000000Z",
+      "updated_at": "2026-03-05T05:15:32.000000Z"
+    },
+    {
+      "id": 7,
+      "name": "EMMER WHEAT",
+      "code": "TRZDI",
+      "name_fr": "AMIDONNIER",
+      "name_pt": "TRIGO EMMER",
+      "botanicalname": "TRITICUM DICOCCUM",
+      "slug": "emmer-wheat",
+      "status": 1,
+      "created_at": "2025-06-26T06:23:44.000000Z",
+      "updated_at": "2026-03-05T05:15:49.000000Z"
+    },
+    {
+      "id": 8,
+      "name": "GROUNDNUT",
+      "code": "ARHHY",
+      "name_fr": "ARACHIDE",
+      "name_pt": "AMENDOIM",
+      "botanicalname": "ARACHIS HYPOGAEA",
+      "slug": "groundnut",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T05:17:29.000000Z"
+    },
+    {
+      "id": 9,
+      "name": "MAIZE",
+      "code": "ZEAMX",
+      "name_fr": "MAÏS",
+      "name_pt": "MILHO",
+      "botanicalname": "ZEA MAYS L.",
+      "slug": "maize",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T05:18:06.000000Z"
+    },
+    {
+      "id": 10,
+      "name": "POTATO",
+      "code": "SOLTU",
+      "name_fr": "POMME DE TERRE",
+      "name_pt": "BATATA",
+      "botanicalname": "SOLANUM TUBEROSUM L.",
+      "slug": "potato",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T05:18:23.000000Z"
+    },
+    {
+      "id": 11,
+      "name": "RICE",
+      "code": "ORYSA",
+      "name_fr": "RIZ",
+      "name_pt": "ARROZ",
+      "botanicalname": "ORYZA SATIVA L.",
+      "slug": "rice",
+      "status": 1,
+      "created_at": "2025-03-11T07:13:38.000000Z",
+      "updated_at": "2026-03-05T05:18:42.000000Z"
+    },
+    {
+      "id": 12,
+      "name": "SORGHUM",
+      "code": "SORVU",
+      "name_fr": "SORGHO",
+      "name_pt": "MAPIRA",
+      "botanicalname": "SORGHUM BICOLOR L.",
+      "slug": "sorghum",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-06T08:39:44.000000Z"
+    },
+    {
+      "id": 13,
+      "name": "SOYBEAN ",
+      "code": "GLXMA",
+      "name_fr": "SOJA",
+      "name_pt": "SOJA",
+      "botanicalname": "GLYCINE MAX L.",
+      "slug": "soybean",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T05:19:17.000000Z"
+    },
+    {
+      "id": 14,
+      "name": "SUNFLOWER ",
+      "code": "HELAN",
+      "name_fr": "TOURNESOL",
+      "name_pt": "GIRASSOL",
+      "botanicalname": "HELIANTHUS ANNUUS L.",
+      "slug": "sunflower",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T05:19:33.000000Z"
+    },
+    {
+      "id": 15,
+      "name": "TEFF",
+      "code": "ERATF",
+      "name_fr": "TEF",
+      "name_pt": "TEFF",
+      "botanicalname": "ERAGROSTIS TEF",
+      "slug": "teff",
+      "status": 1,
+      "created_at": "2025-04-26T13:22:46.000000Z",
+      "updated_at": "2026-03-05T05:19:50.000000Z"
+    },
+    {
+      "id": 16,
+      "name": "TRITICALE",
+      "code": "TTLSS",
+      "name_fr": "TRITICALE",
+      "name_pt": "TRITICALE",
+      "botanicalname": "X-TRITICOSECALE",
+      "slug": "triticale",
+      "status": 1,
+      "created_at": "2025-06-26T06:23:59.000000Z",
+      "updated_at": "2026-03-05T05:22:45.000000Z"
+    }
+  ],
+  "seedtype": [
+    {
+      "id": 1,
+      "name": "HYBRID",
+      "name_fr": "HYBRIDE",
+      "name_pt": "HÍBRIDO",
+      "slug": "hybrid",
+      "rank": 1,
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2025-11-28T07:48:29.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "OPV",
+      "name_fr": "VOP",
+      "name_pt": "OPV (VARIEDADE DE POLINIZAÇÃO ABERTA)",
+      "slug": "opv",
+      "rank": 2,
+      "status": 1,
+      "created_at": "2025-03-11T07:00:07.000000Z",
+      "updated_at": "2026-03-05T06:22:05.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "SELF-POLLINATED",
+      "name_fr": "AUTOGAME",
+      "name_pt": "AUTOPOLINIZADA",
+      "slug": "self-pollinated",
+      "rank": 3,
+      "status": 1,
+      "created_at": "2025-03-12T13:44:33.000000Z",
+      "updated_at": "2025-11-28T07:49:03.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "VEG/CLONALLY PROPAGATED",
+      "name_fr": "MULTIPLICATION VÉGÉTATIVE/CLONALE",
+      "name_pt": "PROPAGAÇÃO VEGETATIVA/CLONAL",
+      "slug": "vegclonally-propagated",
+      "rank": 4,
+      "status": 1,
+      "created_at": "2025-02-25T08:42:42.000000Z",
+      "updated_at": "2025-11-28T07:49:21.000000Z"
+    }
+  ],
+  "licencetype": [
+    {
+      "id": 1,
+      "name": "EXCLUSIVE",
+      "name_fr": "EXCLUSIF",
+      "name_pt": "EXCLUSIVO",
+      "slug": "exclusive",
+      "rank": 1,
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2025-11-28T07:50:59.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "NON-EXCLUSIVE",
+      "name_fr": "NON EXCLUSIF",
+      "name_pt": "NÃO EXCLUSIVO",
+      "slug": "non-exclusive",
+      "rank": 2,
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2025-11-28T07:50:26.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "SEMI-EXCLUSIVE",
+      "name_fr": "SEMI-EXCLUSIF",
+      "name_pt": "SEMI-EXCLUSIVO",
+      "slug": "semi-exclusive",
+      "rank": 3,
+      "status": 1,
+      "created_at": "2025-03-11T06:30:11.000000Z",
+      "updated_at": "2025-11-28T07:51:41.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "PROPRIETARY",
+      "name_fr": "BREVETÉ",
+      "name_pt": "PROPRIETÁRIO",
+      "slug": "proprietary",
+      "rank": 4,
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2025-11-28T07:50:41.000000Z"
+    },
+    {
+      "id": 5,
+      "name": "NOT LICENSED",
+      "name_fr": "NON LICENCIÉ",
+      "name_pt": "NÃO LICENCIADO",
+      "slug": "not-licensed",
+      "rank": 5,
+      "status": 1,
+      "created_at": "2025-03-11T06:29:44.000000Z",
+      "updated_at": "2025-11-28T07:51:23.000000Z"
+    },
+    {
+      "id": 6,
+      "name": "LICENCE NOT REQUIRED",
+      "name_fr": "LICENCE NON REQUISE",
+      "name_pt": "LICENÇA NÃO REQUERIDA",
+      "slug": "licence-not-required",
+      "rank": 6,
+      "status": 1,
+      "created_at": "2025-03-12T07:29:35.000000Z",
+      "updated_at": "2025-11-28T07:52:28.000000Z"
+    },
+    {
+      "id": 7,
+      "name": "NO DATA",
+      "name_fr": "AUCUNE DONNÉE",
+      "name_pt": "SEM DADOS",
+      "slug": "no-data",
+      "rank": 7,
+      "status": 1,
+      "created_at": "2025-03-12T07:25:42.000000Z",
+      "updated_at": "2025-11-28T07:52:59.000000Z"
+    }
+  ],
+  "characters": [
+    {
+      "id": 1,
+      "name": "DISEASE TOLERANT",
+      "name_fr": "TOLÉRANT AUX MALADIES",
+      "name_pt": "TOLERANTEA DOENÇAS",
+      "slug": "disease-tolerant",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T06:18:39.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "DROUGHT TOLERANT",
+      "name_fr": "TOLÉRANT À LA SÉCHERESSE",
+      "name_pt": "TOLERANTEA SECA",
+      "slug": "drought-tolerant",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T06:20:11.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "CONSUMER PREFERENCE",
+      "name_fr": "PRÉFÉRENCE DES CONSOMMATEURS",
+      "name_pt": "PREFERÊNCIA DO CONSUMIDOR",
+      "slug": "consumer-preference",
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2026-03-05T06:20:23.000000Z"
+    },
+    {
+      "id": 10,
+      "name": "FIELD PEST RESISTANT",
+      "name_fr": "RÉSISTANT AUX RAVAGEURS DES CHAMPS",
+      "name_pt": "RESISTENTE A PRAGAS DE CAMPO",
+      "slug": "field-pest-resistant",
+      "status": 1,
+      "created_at": "2025-02-18T11:42:27.000000Z",
+      "updated_at": "2026-03-05T06:20:46.000000Z"
+    },
+    {
+      "id": 11,
+      "name": "STORAGE PEST RESISTANT",
+      "name_fr": "RÉSISTANT AUX RAVAGEURS DU STOCKAGE",
+      "name_pt": "RESISTENTE A PRAGAS DE ARMAZEM",
+      "slug": "storage-pest-resistant",
+      "status": 1,
+      "created_at": "2025-03-10T10:39:29.000000Z",
+      "updated_at": "2026-03-05T06:20:57.000000Z"
+    }
+  ],
+  "level": [
+    {
+      "id": 1,
+      "name": "FULL",
+      "name_fr": "TOTAL",
+      "name_pt": "COMPLETO",
+      "slug": "full",
+      "rank": 1,
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2025-11-28T07:58:37.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "LIMITED",
+      "name_fr": "LIMITÉ",
+      "name_pt": "LIMITADO",
+      "slug": "limited",
+      "rank": 2,
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2025-11-28T07:58:53.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "EMERGING",
+      "name_fr": "ÉMERGENT",
+      "name_pt": "EMERGENTE",
+      "slug": "emerging",
+      "rank": 3,
+      "status": 1,
+      "created_at": null,
+      "updated_at": "2025-11-28T07:59:26.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "NOT COMMERCIALISED",
+      "name_fr": "NON COMMERCIALISÉ",
+      "name_pt": "NÃO COMERCIALIZADO",
+      "slug": "not-commercialised",
+      "rank": 4,
+      "status": 1,
+      "created_at": "2025-03-12T07:48:34.000000Z",
+      "updated_at": "2025-11-28T07:59:41.000000Z"
+    },
+    {
+      "id": 5,
+      "name": "NO DATA",
+      "name_fr": "AUCUNE DONNÉE",
+      "name_pt": "SEM DADOS",
+      "slug": "no-data",
+      "rank": 5,
+      "status": 1,
+      "created_at": "2025-03-12T07:47:12.000000Z",
+      "updated_at": "2025-11-28T07:59:13.000000Z"
+    }
+  ],
+  "countries": [
+    {
+      "id": 5,
+      "name": "ETHIOPIA",
+      "code": "ET42_077",
+      "name_fr": "ÉTHIOPIE",
+      "name_pt": "ETIÓPIA",
+      "slug": "ethiopia",
+      "countrycolor": "yellow",
+      "flag": "167cec809da287.webp",
+      "status": 1,
+      "created_at": "2024-11-20T18:28:55.000000Z",
+      "updated_at": "2026-03-05T06:08:50.000000Z"
+    },
+    {
+      "id": 8,
+      "name": "GHANA",
+      "code": "GH89_292",
+      "name_fr": "GHANA",
+      "name_pt": "GANA",
+      "slug": "ghana",
+      "countrycolor": "darkgreen",
+      "flag": "167cec7e76c9b3.webp",
+      "status": 1,
+      "created_at": "2025-03-10T11:07:19.000000Z",
+      "updated_at": "2026-03-25T06:47:32.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "KENYA",
+      "code": "KE09_917",
+      "name_fr": "KENYA",
+      "name_pt": "QUÊNIA",
+      "slug": "kenya",
+      "countrycolor": "red",
+      "flag": "167c6fcc613837.webp",
+      "status": 1,
+      "created_at": "2024-11-20T15:49:35.000000Z",
+      "updated_at": "2026-02-21T07:47:41.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "MALAWI",
+      "code": "MA11_002",
+      "name_fr": "MALAWI",
+      "name_pt": "MALÁWI",
+      "slug": "malawi",
+      "countrycolor": "blue",
+      "flag": "167c6fccd7d513.webp",
+      "status": 1,
+      "created_at": "2024-11-20T18:18:31.000000Z",
+      "updated_at": "2026-03-05T06:16:07.000000Z"
+    },
+    {
+      "id": 9,
+      "name": "MOZAMBIQUE",
+      "code": "MO89_991",
+      "name_fr": "MOZAMBIQUE",
+      "name_pt": "MOÇAMBIQUE",
+      "slug": "mozambique",
+      "countrycolor": "gold",
+      "flag": "169a968b537d55.webp",
+      "status": 1,
+      "created_at": "2026-03-05T11:27:49.000000Z",
+      "updated_at": "2026-03-05T11:35:45.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "NIGERIA",
+      "code": "NI62_901",
+      "name_fr": "NIGÉRIA",
+      "name_pt": "NIGÉRIA",
+      "slug": "nigeria",
+      "countrycolor": "blue",
+      "flag": "167c6fcd88e320.webp",
+      "status": 1,
+      "created_at": "2024-11-20T18:17:36.000000Z",
+      "updated_at": "2026-02-21T07:48:06.000000Z"
+    },
+    {
+      "id": 6,
+      "name": "RWANDA",
+      "code": "RW88_980",
+      "name_fr": "RWANDA",
+      "name_pt": "RUANDA",
+      "slug": "rwanda",
+      "countrycolor": "yellow",
+      "flag": "167c6fce6957b6.webp",
+      "status": 1,
+      "created_at": "2025-02-18T09:53:51.000000Z",
+      "updated_at": "2026-02-21T07:48:18.000000Z"
+    },
+    {
+      "id": 1,
+      "name": "TANZANIA",
+      "code": "TA66_072",
+      "name_fr": "TANZANIE",
+      "name_pt": "TANZÂNIA",
+      "slug": "tanzania",
+      "countrycolor": "green",
+      "flag": "167c6fced64b8e.webp",
+      "status": 1,
+      "created_at": "2024-11-21T05:16:07.000000Z",
+      "updated_at": "2026-02-21T07:48:28.000000Z"
+    },
+    {
+      "id": 7,
+      "name": "UGANDA",
+      "code": "UG19_912",
+      "name_fr": "OUGANDA",
+      "name_pt": "UGANDA",
+      "slug": "uganda",
+      "countrycolor": "turquoise",
+      "flag": "167cec38847250.webp",
+      "status": 1,
+      "created_at": "2025-03-10T10:48:40.000000Z",
+      "updated_at": "2026-02-21T07:48:41.000000Z"
+    },
+    {
+      "id": 10,
+      "name": "ZAMBIA",
+      "code": "ZM12_519",
+      "name_fr": "ZAMBIE",
+      "name_pt": "ZÂMBIA",
+      "slug": "zambia",
+      "countrycolor": "teal",
+      "flag": "169a96982db7f0.webp",
+      "status": 1,
+      "created_at": "2026-03-05T11:31:14.000000Z",
+      "updated_at": "2026-03-05T11:35:27.000000Z"
+    }
+  ],
+  "maintenancestatus": [
+    {
+      "id": 1,
+      "name": "ACTIVELY MAINTAINED",
+      "name_fr": "ACTIVEMENT MAINTENU",
+      "name_pt": "ACTIVAMENTE MANTIDO",
+      "slug": "actively-maintained",
+      "rank": 1,
+      "status": 1,
+      "created_at": "2024-12-27T09:25:34.000000Z",
+      "updated_at": "2026-03-05T06:17:13.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "SPORADICALLY MAINTAINED",
+      "name_fr": "MAINTENU SPORADIQUEMENT",
+      "name_pt": "ESPORADICAMENTE MANTIDO",
+      "slug": "sporadically-maintained",
+      "rank": 2,
+      "status": 1,
+      "created_at": "2024-12-27T07:23:09.000000Z",
+      "updated_at": "2025-11-28T07:54:21.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "NOT MAINTAINED",
+      "name_fr": "NON MAINTENU",
+      "name_pt": "NÃO MANTIDO",
+      "slug": "not-maintained",
+      "rank": 3,
+      "status": 1,
+      "created_at": "2024-12-27T07:23:22.000000Z",
+      "updated_at": "2025-11-28T07:54:33.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "RETIRED",
+      "name_fr": "RETIRÉ",
+      "name_pt": "RETIRADO",
+      "slug": "retired",
+      "rank": 4,
+      "status": 1,
+      "created_at": "2024-12-27T07:23:31.000000Z",
+      "updated_at": "2025-11-28T07:54:50.000000Z"
+    },
+    {
+      "id": 5,
+      "name": "NO DATA",
+      "name_fr": "AUCUNE DONNÉE",
+      "name_pt": "SEM DADOS",
+      "slug": "no-data",
+      "rank": 5,
+      "status": 1,
+      "created_at": "2025-03-12T07:21:44.000000Z",
+      "updated_at": "2025-11-28T07:55:05.000000Z"
+    }
+  ],
+  "minyearofrelease": "1937",
+  "maxyearofrelease": "2026",
+  "minmasl": 0,
+  "maxmasl": 3650,
+  "instructions": [
+    {
+      "id": 1,
+      "name": "keyword",
+      "text": "<p style=\"font-weight: bold; margin-bottom: 10px;\">\n    Filter by keyword will search in the following data fields:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px;\">\n    <li>Variety Release Name</li>\n    <li>Releasing Entity / Owner</li>\n    <li>Maintainer</li>\n    <li>Commercializing companies</li>\n    <li>Commercialization name</li>\n    <li>Presence in Regional Catalogues</li>\n    <li>Other Countries of Release</li>\n    <li>Recommended Agricultural Ecological Zones</li>\n    <li>Special Attributes (at the time of release)</li>\n  </ul>",
+      "text_fr": "<p style=\"font-weight: bold; margin-bottom: 10px;\">\n    Le filtre par mot-clé recherchera dans les champs de données suivants :\n</p>\n<ul style=\"list-style-type: disc; margin-left: 20px;\">\n    <li>Nom de la Variété Homologuée</li>\n    <li>Entité de Libération / Propriétaire</li>\n    <li>Mainteneur</li>\n    <li>Entreprises de Commercialisation</li>\n    <li>Nom de Commercialisation</li>\n    <li>Présence dans les Catalogues Régionaux</li>\n    <li>Autres Pays d'Homologation</li>\n    <li>Zones Agroécologiques Recommandées</li>\n    <li>Attributs Spéciaux (au moment de l'homologation)</li>\n</ul>",
+      "text_pt": "<p style=\"font-weight: bold; margin-bottom: 10px;\">\n    O filtro por palavra-chave pesquisará nos seguintes campos de dados:\n</p>\n<ul style=\"list-style-type: disc; margin-left: 20px;\">\n    <li>Nome da Variedade Liberada</li>\n    <li>Entidade Liberadora / Proprietário</li>\n    <li>Mantenedor</li>\n    <li>Empresas Comercializadoras</li>\n    <li>Nome de Comercialização</li>\n    <li>Presença em Catálogos Regionais</li>\n    <li>Outros Países de Liberação</li>\n    <li>Zonas Agroecológicas Recomendadas</li>\n    <li>Atributos Especiais (no momento da liberação)</li>\n</ul>",
+      "created_at": "2025-03-11T15:42:50.000000Z",
+      "updated_at": "2025-11-28T08:02:43.000000Z"
+    },
+    {
+      "id": 2,
+      "name": "yearofrelease",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 300px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filter for Variety Year of Release:\n  </p>\n  <p style=\"font-size: 0.9em; margin-bottom: 8px;\">\n    The <strong>Year of Release</strong> refers to the specific year when a seed variety was officially registered, approved, and made available for commercial cultivation by a national seed regulatory body.\n  </p>\n  <p style=\"font-size: 0.9em;\">\n    Use this filter to search for varieties released in a specific year or within a range of years.\n  </p>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 300px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrer par Année d'Homologation de la Variété :\n  </p>\n  <p style=\"font-size: 0.9em; margin-bottom: 8px;\">\n    L'<strong>Année d'Homologation</strong> désigne l'année où une variété a été officiellement enregistrée, approuvée et rendue disponible pour la culture commerciale.\n  </p>\n  <p style=\"font-size: 0.9em;\">\n    Utilisez ce filtre pour rechercher des variétés homologuées une année spécifique ou sur une plage d'années.\n  </p>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 300px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrar por Ano de Liberação da Variedade:\n  </p>\n  <p style=\"font-size: 0.9em; margin-bottom: 8px;\">\n    O <strong>Ano de Liberação</strong> refere-se ao ano em que uma variedade foi oficialmente registrada, aprovada e disponibilizada para cultivo comercial.\n  </p>\n  <p style=\"font-size: 0.9em;\">\n    Use este filtro para pesquisar variedades liberadas em um ano específico ou em uma faixa de anos.\n  </p>\n</div>",
+      "created_at": "2025-03-11T15:42:58.000000Z",
+      "updated_at": "2025-11-28T08:06:42.000000Z"
+    },
+    {
+      "id": 3,
+      "name": "masl",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filter for the minimum and maximum optimal production altitude.\n  </p>\n  <p style=\"font-size: 0.9em; margin: 0;\">\n    This is the lowest/highest altitude at which the variety should be planted to obtain good performance. It is listed as meters above sea level (masl).\n  </p>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrer par altitude de production optimale min/max.\n  </p>\n  <p style=\"font-size: 0.9em; margin: 0;\">\n    Altitude minimale/maximale à laquelle la variété doit être plantée pour une bonne performance. Exprimée en mètres au-dessus du niveau de la mer (m).\n  </p>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrar por altitude ótima de produção mín/máx.\n  </p>\n  <p style=\"font-size: 0.9em; margin: 0;\">\n    Altitude mínima/máxima na qual a variedade deve ser plantada para obter bom desempenho. Listada em metros acima do nível do mar (m).\n  </p>\n</div>",
+      "created_at": "2025-03-11T15:43:07.000000Z",
+      "updated_at": "2025-11-28T08:04:09.000000Z"
+    },
+    {
+      "id": 4,
+      "name": "typeofseed",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filter by the type of seed:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>OPV (Open Pollinated Variety)</strong>: Variety that replicates via natural pollination (note that this can be either its own pollen or pollen from another variety of the same crop).</li>\n    <li><strong>Hybrid</strong>: Seed that is created via hybridisation (controlled cross-pollination) from two or more unrelated parental lines.</li>\n    <li><strong>Self-pollinated</strong>: Varieties where fertilisation occurs within the same flower or between flowers of the same plant.</li>\n    <li><strong>Vegetatively/Clonally Propagated</strong>: Plants that are reproduced through non-seed methods, such as cuttings, tubers, or grafting.</li>\n  </ul>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrer par type de semence :\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>VOP (Variété à Pollinisation Ouverte)</strong> : Variété qui se reproduit par pollinisation naturelle (par son propre pollen ou celui d'autres variétés).</li>\n    <li><strong>Hybride</strong> : Semence créée par croisement contrôlé de deux ou plusieurs lignées parentales.</li>\n    <li><strong>Autogame</strong> : Variétés où la fécondation se produit dans la même fleur ou entre fleurs de la même plante.</li>\n    <li><strong>Multiplication Végétative/Clonale</strong> : Plantes reproduites par méthodes non semencières (boutures, tubercules, greffage).</li>\n  </ul>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrar por tipo de semente:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>VOP (Variedade de Polinização Aberta)</strong> : Variedade que se replica via polinização natural (por seu próprio pólen ou de outras variedades).</li>\n    <li><strong>Híbrido</strong> : Semente criada via hibridização controlada de duas ou mais linhagens parentais.</li>\n    <li><strong>Autopolinizada</strong> : Variedades onde a fertilização ocorre dentro da mesma flor ou entre flores da mesma planta.</li>\n    <li><strong>Propagação Vegetativa/Clonal</strong> : Plantas reproduzidas por métodos não seminais (estacas, tubérculos ou enxertia).</li>\n  </ul>\n</div>",
+      "created_at": "2025-03-11T15:43:14.000000Z",
+      "updated_at": "2025-11-28T08:06:13.000000Z"
+    },
+    {
+      "id": 5,
+      "name": "maintenancestatus",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filter by Maintenance Status:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Actively maintained</strong>: Varieties that are actively maintained and are usually widely available to farmers.</li>\n    <li><strong>Sporadically maintained</strong>: Varieties that are only occasionally maintained and are not in widespread use but may be grown in specific regions, seasons, or for particular purposes.</li>\n    <li><strong>Not maintained</strong>: Varieties that are no longer maintained and are at high risk of being permanently lost if not recovered.</li>\n    <li><strong>Retired</strong>: Varieties that were previously maintained but have been deliberately phased out due to their replacement by newer varieties, reduced demand, or other factors.</li>\n  </ul>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrer par Statut de Maintenance :\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Activement maintenu</strong> : Variétés activement maintenues et généralement largement disponibles pour les agriculteurs.</li>\n    <li><strong>Maintenu sporadiquement</strong> : Variétés occasionnellement maintenues, non largement utilisées mais pouvant être cultivées dans des régions ou saisons spécifiques.</li>\n    <li><strong>Non maintenu</strong> : Variétés non maintenues, risquant d'être perdues définitivement si non récupérées.</li>\n    <li><strong>Retiré</strong> : Variétés précédemment maintenues mais délibérément abandonnées au profit de nouvelles variétés.</li>\n  </ul>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrar por Status de Manutenção:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Activamente mantido</strong> : Variedades activamente mantidas e geralmente amplamente disponíveis para agricultores.</li>\n    <li><strong>Mantido esporadicamente</strong> : Variedades ocasionalmente mantidas, não em uso generalizado, mas cultivadas em regiões ou épocas específicas.</li>\n    <li><strong>Não mantido</strong> : Variedades não mais mantidas, com alto risco de perda permanente se não recuperadas.</li>\n    <li><strong>Retirado</strong> : Variedades previamente mantidas mas deliberadamente descontinuadas devido à substituição por variedades mais novas.</li>\n  </ul>\n</div>",
+      "created_at": "2025-03-11T15:43:21.000000Z",
+      "updated_at": "2026-03-06T06:53:40.000000Z"
+    },
+    {
+      "id": 6,
+      "name": "typeoflicence",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filter by the Type of Licence:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Proprietary</strong>: Company that did the breeding work holds the variety for their own use and does not license it to others.</li>\n    <li><strong>Exclusive</strong>: Licence has been and will continue to be given to only one licensee by the breeding institution.</li>\n    <li><strong>Semi-exclusive</strong>: Licence has been and will continue to be given to more than one licensee by the breeding institution but has a limit on the number of licensees.</li>\n    <li><strong>Non-Exclusive</strong>: Licence has been, or is given by the breeding institution to more than one licensee and has no limit on the number of licensees.</li>\n    <li><strong>Not licensed</strong>: The variety has not been formally licensed and is available to any potential licensees.</li>\n    <li><strong>Licence not required</strong>: The country's laws do not require public variety protection by Plant Breeders' Rights (PBR), patents, trademarks or any other law, hence no licence is needed to commercialize it.</li>\n  </ul>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrer par Type de Licence :\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Breveté</strong> : La société de sélection détient la variété pour son usage exclusif sans la licencier.</li>\n    <li><strong>Exclusif</strong> : Licence accordée à un seul licencié par l'institution de sélection.</li>\n    <li><strong>Semi-exclusif</strong> : Licence accordée à plusieurs licenciés mais avec un nombre limité.</li>\n    <li><strong>Non exclusif</strong> : Licence accordée à plusieurs licenciés sans limite de nombre.</li>\n    <li><strong>Non licencié</strong> : La variété n'est pas formellement licenciée et est disponible pour tout licencié potentiel.</li>\n    <li><strong>Licence non requise</strong> : La législation nationale ne requiert pas de protection variétale formelle.</li>\n  </ul>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrar por Tipo de Licença:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Proprietário</strong> : A empresa de melhoramento detém a variedade para uso exclusivo sem licenciar.</li>\n    <li><strong>Exclusivo</strong> : Licença concedida a apenas um licenciado pela instituição de melhoramento.</li>\n    <li><strong>Semi-exclusivo</strong> : Licença concedida a múltiplos licenciados mas com número limitado.</li>\n    <li><strong>Não exclusivo</strong> : Licença concedida a múltiplos licenciados sem limite numérico.</li>\n    <li><strong>Não licenciado</strong> : A variedade não foi formalmente licenciada e está disponível para licenciados.</li>\n    <li><strong>Licença não requerida</strong> : As leis do país não exigem proteção formal de variedades.</li>\n  </ul>\n</div>",
+      "created_at": "2025-03-11T15:43:31.000000Z",
+      "updated_at": "2025-11-28T08:05:35.000000Z"
+    },
+    {
+      "id": 7,
+      "name": "specialattributes",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filter by Special Attributes:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>DISEASE TOLERANT / RESISTANT</strong>: Disease tolerant means that the variety may catch the target disease but can tolerate its presence and will still produce yield. Disease resistant means the variety will not get the target disease beyond minor or non-harmful levels, or late in the season when the potential for yield loss is low.</li>\n    <li><strong>DROUGHT TOLERANT</strong>: The variety will perform better under drought conditions than non-drought tolerant varieties and may perform similarly under non-drought conditions to other varieties suited to the agroecology. This label does not, however, mean that the variety will perform under extreme drought conditions.</li>\n    <li><strong>CONSUMER PREFERENCES</strong>: The variety has been bred to ensure that certain consumer preferences are present.</li>\n    <li><strong>STORAGE AND FIELD PEST RESISTANT</strong>: The variety exhibits a higher-than-normal level of resistance to storage and field pests. Complete resistance is rare, however.</li>\n  </ul>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrer par Attributs Spéciaux :\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>TOLÉRANT/RÉSISTANT AUX MALADIES</strong> : Tolérant signifie que la variété peut contracter la maladie mais la tolère et produit encore. Résistant signifie qu'elle ne contracte pas la maladie au-delà de niveaux mineurs.</li>\n    <li><strong>TOLÉRANT À LA SÉCHERESSE</strong> : La variété performe mieux en conditions de sécheresse que les variétés non tolérantes, mais pas nécessairement sous sécheresse extrême.</li>\n    <li><strong>PRÉFÉRENCES DES CONSOMMATEURS</strong> : La variété a été sélectionnée pour répondre à certaines préférences des consommateurs.</li>\n    <li><strong>RÉSISTANT AUX RAVAGEURS DU STOCKAGE ET DES CHAMPS</strong> : La variété présente une résistance supérieure à la normale aux ravageurs, bien qu'une résistance complète soit rare.</li>\n  </ul>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrar por Atributos Especiais:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>TOLERANTE/RESISTENTE A DOENÇAS</strong> : Tolerante significa que a variedade pode contrair a doença mas tolera sua presença e ainda produz. Resistente significa que não contrai a doença além de níveis menores.</li>\n    <li><strong>TOLERANTE À SECA</strong> : A variedade tem melhor desempenho em condições de seca do que variedades não tolerantes, mas não necessariamente sob seca extrema.</li>\n    <li><strong>PREFERÊNCIAS DO CONSUMIDOR</strong> : A variedade foi melhorada para atender a certas preferências dos consumidores.</li>\n    <li><strong>RESISTENTE A PRAGAS DE ARMAZÉM E CAMPO</strong> : A variedade exibe resistência acima do normal a pragas, embora resistência completa seja rara.</li>\n  </ul>\n</div>",
+      "created_at": "2025-03-11T15:43:41.000000Z",
+      "updated_at": "2026-03-06T06:54:58.000000Z"
+    },
+    {
+      "id": 8,
+      "name": "commercializationlevel",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filter by Commercialisation Level:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Full</strong>: Variety is fully available to farmers.</li>\n    <li><strong>Limited</strong>: Variety is available to only some farmers, most likely in specific geographies.</li>\n    <li><strong>Emerging</strong>: Variety is just beginning to be offered to farmers.</li>\n    <li><strong>Not commercialised</strong>: Variety has not been commercialised yet.</li>\n  </ul>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrer par Niveau de Commercialisation :\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Total</strong> : La variété est entièrement disponible pour les agriculteurs.</li>\n    <li><strong>Limité</strong> : La variété n'est disponible que pour certains agriculteurs, probablement dans des zones géographiques spécifiques.</li>\n    <li><strong>Émergent</strong> : La variété commence tout juste à être proposée aux agriculteurs.</li>\n    <li><strong>Non commercialisé</strong> : La variété n'a pas encore été commercialisée.</li>\n  </ul>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 250px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Filtrar por Nível de Comercialização:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li><strong>Total</strong>: A variedade está totalmente disponível para os agricultores.</li>\n    <li><strong>Limitado</strong>: A variedade está disponível apenas para alguns agricultores, provavelmente em geografias específicas.</li>\n    <li><strong>Emergente</strong>: A variedade está apenas começando a ser oferecida aos agricultores.</li>\n    <li><strong>Não comercializado</strong>: A variedade ainda não foi comercializada.</li>\n  </ul>\n</div>",
+      "created_at": "2025-03-11T15:43:50.000000Z",
+      "updated_at": "2025-11-28T08:02:02.000000Z"
+    },
+    {
+      "id": 9,
+      "name": "advancedsearch",
+      "text": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 300px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    How to Use the Advanced Filter:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li>\n      <strong>Operator Select Field:</strong> Choose how the search should interpret your keywords:\n      <ul style=\"list-style-type: circle; margin-left: 20px; padding: 0;\">\n        <li><strong>All of these words:</strong> Results must include all the keywords entered.</li>\n        <li><strong>Any of these words:</strong> Results can include any of the keywords entered.</li>\n        <li><strong>None of these words:</strong> Results must exclude all the keywords entered.</li>\n        <li><strong>This exact word or phrase:</strong> Results must match the exact phrase entered.</li>\n      </ul>\n    </li>\n    <li>\n      <strong>Select Field:</strong> Choose the data field to search within, such as \"Variety Release Name,\" \"Releasing Entity / Owner,\" or other characteristics defined in the catalogue.\n    </li>\n    <li>\n      <strong>Search Keyword(s):</strong> Enter the keyword(s) or phrase you want to search for in the selected data field.\n    </li>\n  </ul>\n  <p style=\"font-size: 0.9em; margin-top: 8px;\">\n    Click the \"Search\" button to apply the filter and view the results.\n  </p>\n</div>",
+      "text_fr": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 300px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Comment Utiliser le Filtre Avancé :\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li>\n      <strong>Champ Sélection d'Opérateur :</strong> Choisissez comment interpréter vos mots-clés :\n      <ul style=\"list-style-type: circle; margin-left: 20px; padding: 0;\">\n        <li><strong>Tous ces mots :</strong> Les résultats doivent inclure tous les mots-clés saisis.</li>\n        <li><strong>Un de ces mots :</strong> Les résultats peuvent inclure n'importe lequel des mots-clés saisis.</li>\n        <li><strong>Aucun de ces mots :</strong> Les résultats doivent exclure tous les mots-clés saisis.</li>\n        <li><strong>Ce mot ou phrase exact :</strong> Les résultats doivent correspondre exactement à la phrase saisie.</li>\n      </ul>\n    </li>\n    <li>\n      <strong>Champ de Sélection :</strong> Choisissez le champ de données à rechercher, tel que \"Nom de la Variété Homologuée\", \"Entité de Libération / Propriétaire\", ou d'autres caractéristiques du catalogue.\n    </li>\n    <li>\n      <strong>Mot(s)-clé(s) de Recherche :</strong> Saisissez le(s) mot(s)-clé(s) ou phrase que vous souhaitez rechercher dans le champ sélectionné.\n    </li>\n  </ul>\n  <p style=\"font-size: 0.9em; margin-top: 8px;\">\n    Cliquez sur le bouton \"Rechercher\" pour appliquer le filtre et voir les résultats.\n  </p>\n</div>",
+      "text_pt": "<div style=\"font-family: Arial, sans-serif; color: #333; max-width: 300px;\">\n  <p style=\"font-weight: bold; margin-bottom: 8px;\">\n    Como Usar o Filtro Avançado:\n  </p>\n  <ul style=\"list-style-type: disc; margin-left: 20px; font-size: 0.9em; padding: 0;\">\n    <li>\n      <strong>Campo de Seleção do Operador:</strong> Escolha como a pesquisa deve interpretar suas palavras-chave:\n      <ul style=\"list-style-type: circle; margin-left: 20px; padding: 0;\">\n        <li><strong>Todas estas palavras:</strong> Os resultados devem incluir todas as palavras-chave inseridas.</li>\n        <li><strong>Qualquer uma destas palavras:</strong> Os resultados podem incluir qualquer uma das palavras-chave inseridas.</li>\n        <li><strong>Nenhuma destas palavras:</strong> Os resultados devem excluir todas as palavras-chave inseridas.</li>\n        <li><strong>Esta palavra ou frase exata:</strong> Os resultados devem corresponder exatamente à frase inserida.</li>\n      </ul>\n    </li>\n    <li>\n      <strong>Campo de Seleção:</strong> Escolha o campo de dados para pesquisar, como \"Nome da Variedade Liberada\", \"Entidade Liberadora / Proprietário\", ou outras características definidas no catálogo.\n    </li>\n    <li>\n      <strong>Palavra(s)-chave de Pesquisa:</strong> Insira a(s) palavra(s)-chave ou frase que deseja pesquisar no campo de dados selecionado.\n    </li>\n  </ul>\n  <p style=\"font-size: 0.9em; margin-top: 8px;\">\n    Clique no botão \"Pesquisar\" para aplicar o filtro e visualizar os resultados.\n  </p>\n</div>",
+      "created_at": "2025-03-12T06:27:01.000000Z",
+      "updated_at": "2025-11-28T08:01:28.000000Z"
+    }
+  ],
+  "searchtables": [
+    {
+      "id": "varietyname",
+      "text": "Variety Release Name"
+    },
+    {
+      "id": "releasingentity",
+      "text": "Releasing Entity / Owner"
+    },
+    {
+      "id": "maintainer",
+      "text": "Maintainer"
+    },
+    {
+      "id": "commercialcompany",
+      "text": "Commercialising companies"
+    },
+    {
+      "id": "commercialnames",
+      "text": "Commercialisation name"
+    },
+    {
+      "id": "regionalcatalogs",
+      "text": "Presence in Regional Catalogues"
+    },
+    {
+      "id": "othercountries",
+      "text": "Other Countries of Release"
+    },
+    {
+      "id": "regions",
+      "text": "Recommended Agricultural Ecological Zones"
+    },
+    {
+      "id": "allspecialattributes",
+      "text": "Special Attributes (at the time of release)"
+    }
+  ]
+}

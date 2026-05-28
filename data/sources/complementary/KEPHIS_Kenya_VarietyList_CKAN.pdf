@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+      <meta name="generator" content="ckan 2.9.10" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Sprout</title>
+
+    
+    
+    <link rel="shortcut icon" href="/base/images/Sprout-Logo-Icon.ico" />
+    
+    
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L40GWWLN0"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+
+ gtag('set', 'linker', );
+ gtag('js', new Date());
+
+ gtag('config', 'G-8L40GWWLN0', {
+     anonymize_ip: true,
+     linker: {
+         domains: []
+     }
+ });
+</script>
+    
+
+  
+  
+  
+      
+      
+      
+    
+  
+
+  
+  <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'/>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'/>
+
+  
+
+
+    
+      
+      
+    
+
+    
+    <link href="/webassets/base/2471d0b8_main.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-scheming/728ec589_scheming_css.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-sprout/2fc79cf6-custom.css" rel="stylesheet"/>
+<link href="/webassets/ckanext-suggest/d3ee2388-suggest.css" rel="stylesheet"/>
+    
+  </head>
+
+  
+  <body data-site-root="https://db.sproutopencontent.com/" data-locale-root="https://db.sproutopencontent.com/" >
+
+    
+    <div class="sr-only sr-only-focusable"><a href="#content">Skip to content</a></div>
+  
+
+  
+
+<header>
+  
+     
+<div class="account-masthead">
+  <div class="container">
+     
+    <nav class="account not-authed" aria-label="Account">
+      <ul class="list-unstyled">
+        
+          
+
+  <li>
+    <a href="https://www.sproutopencontent.com/contact-form" title="Contact">
+      
+         Contact Us
+      
+    </a>
+  </li>
+
+
+          
+        <li><a href="/user/login">Log in</a></li>
+        
+        <li><a class="sub" href="/user/register">Register</a></li>
+         
+        
+      </ul>
+    </nav>
+     
+
+    <div class="row">
+    <div class="col-sm-6">
+      <a class="logo" href="https://sproutopencontent.com/">
+        <img class="sprout-logo" src="/uploads/admin/2023-11-01-145503.282819Sprout-Logo-final.jpg" alt="Sprout"
+          title="Sprout" />
+      </a>
+    </div>
+    <div class="col-sm-6">
+      <div class="search-bar">
+        
+          
+
+
+<div class="module module-shallow">
+  <form class="module-content search-form" method="get" action="/dataset/">
+    <div class="search-input form-group search-giant">
+      <input aria-label="Search datasets" id="field-main-search" type="text" class="form-control" name="q" value="" autocomplete="off" placeholder="Search datasets..." />
+      <button type="submit" aria-labelledby="search-label">
+        <i class="fa fa-search"></i>
+        <span class="sr-only" id="search-label">Search</span>
+      </button>
+    </div>
+  </form>
+</div>
+        
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<header class="navbar navbar-static-top masthead">
+    
+  <div class="container">
+    <div class="navbar-right">
+      <button data-target="#main-navigation-toggle" data-toggle="collapse" class="navbar-toggle collapsed" type="button" aria-label="expand or collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    <hgroup class="header-image navbar-left">
+      
+    </hgroup>
+
+    <div class="collapse navbar-collapse" id="main-navigation-toggle">
+      
+      <nav class="section navigation">
+        <ul class="nav nav-pills">
+            
+
+    <li class="None" role="presentation">
+      <a role="menuitem" tabindex="-1" href="/dataset/">Content</a>
+    </li>
+    <li class="None" role="presentation">
+      <a role="menuitem" tabindex="-1" href="/organization/">Organizations</a>
+    </li>
+    <li class="None" role="presentation">
+      <a role="menuitem" tabindex="-1" href="/group/">Groups</a>
+    </li>
+
+        </ul>
+      </nav>
+        
+    </div>
+  </div>
+</header>
+
+  
+</header>
+
+
+    <div class="main">
+      <div id="content" class="container">
+        
+          
+            <div class="flash-messages">
+              
+                
+              
+            </div>
+          
+
+          
+            <div class="toolbar" role="navigation" aria-label="Breadcrumb">
+              
+                
+                  <ol class="breadcrumb">
+                    
+<li class="home"><a href="https://sproutopencontent.com/" aria-label="Home"><i class="fa fa-home"></i><span> Home</span></a></li>
+                    
+  <li class="active"><a href="/user/login">Login</a></li>
+
+                  </ol>
+                
+              
+            </div>
+          
+
+          <div class="row wrapper">
+            
+            
+            
+
+            
+              <aside class="secondary col-sm-3">
+                
+                
+  
+  
+  <section class="module module-narrow module-shallow">
+    
+      <h2 class="module-heading">Need an Account?</h2>
+      <div class="module-content">
+        <p>Then sign right up, it only takes a minute.</p>
+        <p class="action">
+        
+          <a class="btn btn-default" href="/user/register">Create an Account</a>
+        
+        </p>
+      </div>
+    
+  </section>
+  
+  
+
+  
+  <section class="module module-narrow module-shallow">
+    
+<h2 class="module-heading">Forgotten something?</h2>
+<div class="module-content">
+  <p>No problem, use our password reset form to recover your username and change your password.</p>
+  <p class="action">
+    
+    <a class="btn btn-default" href="/user/reset">Forgot your password?</a>
+    
+  </p>
+</div>
+
+  </section>
+  
+
+              </aside>
+            
+
+            
+              <div class="primary col-sm-9 col-xs-12" role="main">
+                
+                
+  <section class="module">
+    <div class="module-content">
+      <h1 class="page-heading">Login</h1>
+      
+        
+
+
+
+
+
+<form action="/login_generic?came_from=/dataset/1974f46d-2018-4f00-b0be-8db97010f427/resource/b5cc9043-4ec6-48ac-b467-9674cb721d7f" method="post">
+  
+  
+  
+
+  
+  <div class="form-group control-medium">
+  <label class="control-label" for="field-login">Username</label>
+  <div class="controls ">
+  
+<input id="field-login" type="text" name="login" value="" placeholder=""  class="form-control" />
+
+  
+  
+  </div>
+  </div>
+  
+
+
+  
+  <div class="form-group control-medium">
+  <label class="control-label" for="field-password">Password</label>
+  <div class="controls ">
+  
+<input id="field-password" type="password" name="password" value="" placeholder=""  class="form-control" />
+
+  
+  
+  </div>
+  </div>
+  
+
+
+  <div class="form-group ">
+<div class="controls">
+  <label class="checkbox" for="field-remember">
+    <input id="field-remember" type="checkbox" name="remember" value="63072000" checked   />
+    Remember me
+    
+    
+  </label>
+  
+</div>
+</div>
+
+
+  <div class="form-actions">
+    
+    <button class="btn btn-primary" type="submit">Login</button>
+    
+  </div>
+</form>
+      
+    </div>
+  </section>
+
+              </div>
+            
+          </div>
+        
+      </div>
+    </div>
+  
+    <script src="https://cc.cdn.civiccomputing.com/9/cookieControl-9.x.min.js"></script>
+<script>
+  var config = {
+    apiKey: '75728cc9879b71c4c08af547159e93a3217a4543',
+    product: 'PRO',
+    position: 'LEFT',
+    theme: 'LIGHT',
+    layout: 'popup',
+    rejectButton: true,
+    encodeCookie: true,
+    necessaryCookies: ['ckan','1P_JAR', 'fldt', 'auth_tkt'],
+    text: {
+      title: 'Cookie Control',
+      intro: 'Some cookies on this site are essential, and the site won`t work as expected without them. These cookies are set when you submit a form, login or interact with the site by doing something that goes beyond clicking on simple links. We also use some non-essential cookies to anonymously track visitors or enhance your experience of the site. If you`re not happy with this, we won`t set these cookies but some nice features of the site may be unavailable.'
+    },
+    branding: {
+      fontFamily: 'Open Sans, sans-serif',
+      acceptText: '#1d6919',
+      removeAbout: true
+    }
+  };
+
+  CookieControl.load(config);
+</script>
+<footer class="site-footer">
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-sm-8">
+        
+          <ul class="list-unstyled">
+            
+              <li>Copyright © 2023 Sprout - <a href="/">The Open Content Agriculture Platform</a></li>
+            
+          </ul>
+        
+      </div>
+      <div class="col-sm-4">
+        
+        <ul class="list-unstyled">
+          <li><a class="footer-links" href="https://www.sproutopencontent.com/contact-form">Contact Us</a></li>
+          <li><a class="footer-links" href="https://www.sproutopencontent.com/general-4-1">Privacy Policy</a></li>
+          <li><a class="footer-links" href="https://www.sproutopencontent.com/general-4-2">Terms of Service</a></li>
+          <li><a class= "footer-links" href="https://www.sproutopencontent.com/general-4">Acceptable Use Policies</a></li>
+        </ul>
+        
+      </div>
+    </div>
+    
+    </div>
+  </footer>
+  
+  
+  
+  
+  
+  
+    
+    
+    
+        
+        
+        <div class="js-hide" data-module="google-analytics"
+             data-module-googleanalytics_resource_prefix="/downloads/">
+        </div>
+    
+
+
+  
+
+      
+
+    
+    
+    <link href="/webassets/vendor/f3b8236b_select2.css" rel="stylesheet"/>
+<link href="/webassets/vendor/0b01aef1_font-awesome.css" rel="stylesheet"/>
+    <script src="/webassets/vendor/d8ae4bed_jquery.js" type="text/javascript"></script>
+<script src="/webassets/vendor/fb6095a0_vendor.js" type="text/javascript"></script>
+<script src="/webassets/vendor/580fa18d_bootstrap.js" type="text/javascript"></script>
+<script src="/webassets/base/15a18f6c_main.js" type="text/javascript"></script>
+<script src="/webassets/base/2448af8b_ckan.js" type="text/javascript"></script>
+<script src="/webassets/ckanext-googleanalytics/event_tracking.js?71ae8997" type="text/javascript"></script>
+<script src="/webassets/ckanext-suggest/eb13c1e1-suggest.js" type="text/javascript"></script>
+  </body>
+</html>

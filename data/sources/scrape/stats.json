@@ -1,0 +1,8 @@
+{
+  "endpoint": "https://varietycatalogues.com/apiv1/public/api/seedcentredata",
+  "expected_total": 4605,
+  "fetched_records": 4605,
+  "pages_fetched": 24,
+  "per_page_requested": 200,
+  "elapsed_sec": 48.17
+}

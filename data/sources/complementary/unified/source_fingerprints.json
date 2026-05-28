@@ -1,0 +1,98 @@
+{
+  "agra": {
+    "url": "https://varietycatalogues.com/apiv1/public/api/visits/stats",
+    "method": "stats",
+    "fingerprint": "varieties_count:3911",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "ppvfra": {
+    "url": "https://plantauthority.gov.in/sites/default/files/cer.json",
+    "method": "head",
+    "fingerprint": "size:9423322|lm:Fri, 08 May 2026 04:31:02 GMT",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "wiews_global": {
+    "url": "https://wiews.fao.org/wiewsIndicatorsSearch",
+    "method": "wiewscount",
+    "fingerprint": "global_count:15584",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "nacgrab": {
+    "url": "https://www.nacgrab.gov.ng/wp-content/uploads/2025/10/Varieties-Released-Catalogue-updated-April-2025.pdf",
+    "method": "head",
+    "fingerprint": "size:1455445|lm:Thu, 16 Oct 2025 12:11:59 GMT",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "kephis_2025": {
+    "url": "https://www.kephis.go.ke/sites/default/files/2025-02/NATIONAL%20CROP%20VARIETY%20LIST-%202025%20EDITION.pdf",
+    "method": "head",
+    "fingerprint": "size:3664525|lm:Fri, 14 Feb 2025 08:42:51 GMT",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "ecowas": {
+    "url": "https://ecowap.ecowas.int/media/events/concept/all/Regional_Catalogue_Version.pdf",
+    "method": "head",
+    "fingerprint": "size:5447641|lm:Mon, 08 May 2023 21:21:43 GMT",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "ghana_2019": {
+    "url": "https://nastag.org/docx/resources/2019%20NATIONAL%20CROP%20VARIETY%20CATALOGUE.pdf",
+    "method": "head",
+    "fingerprint": "size:1841201|lm:Thu, 02 Feb 2023 18:12:14 GMT",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "cimmyt_maize_watch": {
+    "url": "https://maizecatalog.cimmyt.org/",
+    "method": "recovery_probe",
+    "fingerprint": "status:200|ct:text/html",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "glomip_watch": {
+    "url": "https://glomip.cgiar.org/product-catalog",
+    "method": "recovery_probe",
+    "fingerprint": "status:200|ct:text/html",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "cgspace_watch": {
+    "url": "https://cgspace.cgiar.org/server/api",
+    "method": "recovery_probe",
+    "fingerprint": "status:200|ct:application/hal+json",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "fao_wiews_catalog_watch": {
+    "url": "https://data.apps.fao.org/catalog/dataset/fao-wiews",
+    "method": "recovery_probe",
+    "fingerprint": "status:200|ct:text/html",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "ethiopia_eaa_watch": {
+    "url": "https://www.eservices.gov.et/en/services?oID=1009&name=Ethiopian+Agricultural+Authority",
+    "method": "recovery_probe",
+    "fingerprint": "status:200|ct:text/html",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "srilanka_doa_watch": {
+    "url": "https://doa.gov.lk/scs-home/",
+    "method": "recovery_probe",
+    "fingerprint": "status:200|ct:text/html",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "bangladesh_moa_watch": {
+    "url": "https://moa.portal.gov.bd/",
+    "method": "recovery_probe",
+    "fingerprint": "err:URLError",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "pakistan_fscrd_watch": {
+    "url": "http://www.federalseed.gov.pk/",
+    "method": "recovery_probe",
+    "fingerprint": "err:URLError",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  },
+  "pakistan_pbrr_watch": {
+    "url": "https://pbrr.gov.pk/",
+    "method": "recovery_probe",
+    "fingerprint": "err:URLError",
+    "last_checked": "2026-05-19T20:52:38+00:00"
+  }
+}
